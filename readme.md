@@ -22,7 +22,7 @@ npm run watch  # Listen for file changes and automatically rebuild
 
 - [Tekeste Kidanu](https://github.com/iamtekeste)
 
-## Maintainers
+## Thank you
 
 This boilerplate is inspired by Sindre's [Refined Twitter](https://github.com/sindresorhus/refined-twitter)
 
