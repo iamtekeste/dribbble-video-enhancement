@@ -1,0 +1,18 @@
+{
+  "name": "My Awesome Extension",
+  "version": "0.0.0",
+  "description": "My Awesome Extension does this and that.",
+  "homepage_url": "https://github.com/iamtekeste/browser-extension-template",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["webpages", "you", "want", "to", "target"],
+      "css": ["style/content.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
