@@ -5,12 +5,23 @@
   "homepage_url": "https://github.com/iamtekeste/browser-extension-template",
   "manifest_version": 2,
   "icons": {
-    "128": "icon.png"
+    "128": "128-icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.dribbble.com/*",
+    "https://cdn.dribbble.com/users/*/videos/*",
+    "http://localhost:5000/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
       "run_at": "document_start",
-      "matches": ["webpages", "you", "want", "to", "target"],
+      "matches": ["https://dribbble.com/*", "http://localhost:5000/*"],
       "css": ["style/content.css"],
       "js": ["content.js"]
     }

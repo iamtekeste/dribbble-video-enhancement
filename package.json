@@ -3,7 +3,9 @@
     "build": "webpack --mode=production",
     "watch": "webpack --mode=development --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^5.16.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "babel-loader": "^8.0.6",

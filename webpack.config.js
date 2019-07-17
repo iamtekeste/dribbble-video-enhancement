@@ -5,7 +5,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   stats: 'errors-only',
   entry: {
-    content: './source/content'
+    content: './source/content',
+    background: './source/background',
+    inject: './source/inject'
   },
   output: {
     path: path.join(__dirname, 'distribution'),
@@ -32,5 +34,6 @@ module.exports = {
         context: 'source'
       }
     ])
-  ]
+  ],
+  devtool: 'cheap-module-source-map'
 };
